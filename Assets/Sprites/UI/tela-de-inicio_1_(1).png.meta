@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 2e17ea170e5fbd041bd260db243059ad
+guid: 0e59e9be9ac4ddb499a042fc876335f5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4620424660810667025
-    second: celeiro_fase_final_0
+      213: 8195311913895227902
+    second: tela-de-inicio_1_(1)_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: celeiro_fase_final_0
+      name: tela-de-inicio_1_(1)_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 895
-        height: 384
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 114131bbfbb0f1040800000000000000
-      internalID: 4620424660810667025
+      spriteID: ef1704bd3c89bb170800000000000000
+      internalID: 8195311913895227902
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      celeiro_fase_final_0: 4620424660810667025
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
