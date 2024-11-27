@@ -18,10 +18,10 @@ public class LevelLoader : MonoBehaviour
     void Update()
     {
         // Se pressionar qualquer tecla
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Return))
         {
             // Mudar de Cena
-            StartCoroutine(CarregarFase("Prólogo"));
+            StartCoroutine(CarregarFase("Fase01"));
         }
     }
 

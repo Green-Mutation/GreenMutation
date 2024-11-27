@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 082e956716ad36e42b6071e15d3cd943
+guid: d2a13f55e11741649b0963919833edf5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7324407491542928792
-    second: cena-bonus_0
+      213: -5527495405010744719
+    second: Cena Bonus Interior_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,7 +113,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: cena-bonus_0
+      name: Cena Bonus Interior_0
       rect:
         serializedVersion: 2
         x: 0
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 862bf5c513a7a5a90800000000000000
-      internalID: -7324407491542928792
+      spriteID: 17a0bbe07346a43b0800000000000000
+      internalID: -5527495405010744719
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      cena-bonus_0: -7324407491542928792
+      Cena Bonus Interior_0: -5527495405010744719
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
