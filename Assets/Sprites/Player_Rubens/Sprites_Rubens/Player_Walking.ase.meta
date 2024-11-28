@@ -97,7 +97,11 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
+<<<<<<< HEAD:Assets/Sprites/Player_Rubens/Sprites_Rubens/Player_Walking.ase.meta
   platformSettingsDirtyTick: 638684021622659148
+=======
+  platformSettingsDirtyTick: 0
+>>>>>>> a46861ea57a2af159dea7341ec1b7e246637b692:Assets/Sprites/Player_Rubens/Sprites_Rubens/Idle_Player.ase.meta
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -132,9 +136,15 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
+<<<<<<< HEAD:Assets/Sprites/Player_Rubens/Sprites_Rubens/Player_Walking.ase.meta
       width: 273
       height: 63
     spriteID: 0e721ea5b6b69884cb4fd671ed1c6f44
+=======
+      width: 40
+      height: 62
+    spriteID: e09aede687b8e1040adda273534d885a
+>>>>>>> a46861ea57a2af159dea7341ec1b7e246637b692:Assets/Sprites/Player_Rubens/Sprites_Rubens/Idle_Player.ase.meta
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -155,7 +165,11 @@ ScriptedImporter:
       y: 75
       width: 275
       height: 62
+<<<<<<< HEAD:Assets/Sprites/Player_Rubens/Sprites_Rubens/Player_Walking.ase.meta
     spriteID: cb1643985d5ea094383f96ff6ec4a462
+=======
+    spriteID: d798ee6c07e709246b4e863b7c58ea5e
+>>>>>>> a46861ea57a2af159dea7341ec1b7e246637b692:Assets/Sprites/Player_Rubens/Sprites_Rubens/Idle_Player.ase.meta
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -176,7 +190,11 @@ ScriptedImporter:
       y: 145
       width: 275
       height: 62
+<<<<<<< HEAD:Assets/Sprites/Player_Rubens/Sprites_Rubens/Player_Walking.ase.meta
     spriteID: 4b52147cea497ac4a9f605dc7fe8b881
+=======
+    spriteID: 9bd2f56540522f948a7179dc7fae86bd
+>>>>>>> a46861ea57a2af159dea7341ec1b7e246637b692:Assets/Sprites/Player_Rubens/Sprites_Rubens/Idle_Player.ase.meta
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -193,11 +211,19 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
+<<<<<<< HEAD:Assets/Sprites/Player_Rubens/Sprites_Rubens/Player_Walking.ase.meta
       x: 334
       y: 75
       width: 39
       height: 61
     spriteID: 99e1c171c04406c4f9360e7bde253116
+=======
+      x: 52
+      y: 4
+      width: 40
+      height: 62
+    spriteID: b57ed0e8a720fc146a396672bb22a4d5
+>>>>>>> a46861ea57a2af159dea7341ec1b7e246637b692:Assets/Sprites/Player_Rubens/Sprites_Rubens/Idle_Player.ase.meta
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -214,11 +240,124 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
+<<<<<<< HEAD:Assets/Sprites/Player_Rubens/Sprites_Rubens/Player_Walking.ase.meta
       x: 287
       y: 75
       width: 39
       height: 62
     spriteID: 49a1f29adce644e489658745158c4c92
+=======
+      x: 52
+      y: 74
+      width: 40
+      height: 61
+    spriteID: 7106a36b502932644920055ec0e744fd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 52, y: 74}
+  - name: Frame_5
+    originalName: 
+    pivot: {x: 0.625, y: -0.016393442}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 52
+      y: 143
+      width: 40
+      height: 61
+    spriteID: df263c45613081e4985494005d331d7c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 52, y: 143}
+  - name: Frame_6
+    originalName: 
+    pivot: {x: 0.6666667, y: -0.016393442}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 100
+      y: 74
+      width: 39
+      height: 61
+    spriteID: 9627923f8a6505543ac1369de86c1e3a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 100, y: 74}
+  - name: Frame_7
+    originalName: 
+    pivot: {x: 0.6666667, y: -0.016393442}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 100
+      y: 143
+      width: 39
+      height: 61
+    spriteID: 5d44f594288e5e047b58a88741823fa4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 100, y: 143}
+  - name: Frame_8
+    originalName: 
+    pivot: {x: 0.6666667, y: -0.016393442}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 147
+      y: 4
+      width: 39
+      height: 61
+    spriteID: 6a12bbc8408747b419329fa80958ed6b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 147, y: 4}
+  - name: Frame_9
+    originalName: 
+    pivot: {x: 0.6666667, y: -0.016129032}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 100
+      y: 4
+      width: 39
+      height: 62
+    spriteID: 27a6bbde0ec5e9a4090847ee54f5860b
+>>>>>>> a46861ea57a2af159dea7341ec1b7e246637b692:Assets/Sprites/Player_Rubens/Sprites_Rubens/Idle_Player.ase.meta
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -408,11 +547,19 @@ ScriptedImporter:
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
+<<<<<<< HEAD:Assets/Sprites/Player_Rubens/Sprites_Rubens/Player_Walking.ase.meta
         x: -227
         y: -1
         width: 273
         height: 63
       spriteId: 0e721ea5b6b69884cb4fd671ed1c6f44
+=======
+        x: 5
+        y: 1
+        width: 40
+        height: 62
+      spriteId: e09aede687b8e1040adda273534d885a
+>>>>>>> a46861ea57a2af159dea7341ec1b7e246637b692:Assets/Sprites/Player_Rubens/Sprites_Rubens/Idle_Player.ase.meta
     - name: Frame_1
       frameIndex: 1
       additiveSortOrder: 0
@@ -421,7 +568,11 @@ ScriptedImporter:
         y: -1
         width: 275
         height: 62
+<<<<<<< HEAD:Assets/Sprites/Player_Rubens/Sprites_Rubens/Player_Walking.ase.meta
       spriteId: cb1643985d5ea094383f96ff6ec4a462
+=======
+      spriteId: d798ee6c07e709246b4e863b7c58ea5e
+>>>>>>> a46861ea57a2af159dea7341ec1b7e246637b692:Assets/Sprites/Player_Rubens/Sprites_Rubens/Idle_Player.ase.meta
     - name: Frame_2
       frameIndex: 2
       additiveSortOrder: 0
@@ -430,25 +581,89 @@ ScriptedImporter:
         y: -1
         width: 275
         height: 62
+<<<<<<< HEAD:Assets/Sprites/Player_Rubens/Sprites_Rubens/Player_Walking.ase.meta
       spriteId: 4b52147cea497ac4a9f605dc7fe8b881
+=======
+      spriteId: 9bd2f56540522f948a7179dc7fae86bd
+>>>>>>> a46861ea57a2af159dea7341ec1b7e246637b692:Assets/Sprites/Player_Rubens/Sprites_Rubens/Idle_Player.ase.meta
     - name: Frame_3
       frameIndex: 3
       additiveSortOrder: 0
       cellRect:
+<<<<<<< HEAD:Assets/Sprites/Player_Rubens/Sprites_Rubens/Player_Walking.ase.meta
         x: 7
         y: 0
         width: 39
         height: 61
       spriteId: 99e1c171c04406c4f9360e7bde253116
+=======
+        x: 6
+        y: 1
+        width: 40
+        height: 62
+      spriteId: b57ed0e8a720fc146a396672bb22a4d5
+>>>>>>> a46861ea57a2af159dea7341ec1b7e246637b692:Assets/Sprites/Player_Rubens/Sprites_Rubens/Idle_Player.ase.meta
     - name: Frame_4
       frameIndex: 4
       additiveSortOrder: 0
       cellRect:
         x: 7
+<<<<<<< HEAD:Assets/Sprites/Player_Rubens/Sprites_Rubens/Player_Walking.ase.meta
         y: 0
         width: 39
         height: 62
       spriteId: 49a1f29adce644e489658745158c4c92
+=======
+        y: 1
+        width: 40
+        height: 61
+      spriteId: 7106a36b502932644920055ec0e744fd
+    - name: Frame_5
+      frameIndex: 5
+      additiveSortOrder: 0
+      cellRect:
+        x: 7
+        y: 1
+        width: 40
+        height: 61
+      spriteId: df263c45613081e4985494005d331d7c
+    - name: Frame_6
+      frameIndex: 6
+      additiveSortOrder: 0
+      cellRect:
+        x: 6
+        y: 1
+        width: 39
+        height: 61
+      spriteId: 9627923f8a6505543ac1369de86c1e3a
+    - name: Frame_7
+      frameIndex: 7
+      additiveSortOrder: 0
+      cellRect:
+        x: 6
+        y: 1
+        width: 39
+        height: 61
+      spriteId: 5d44f594288e5e047b58a88741823fa4
+    - name: Frame_8
+      frameIndex: 8
+      additiveSortOrder: 0
+      cellRect:
+        x: 6
+        y: 1
+        width: 39
+        height: 61
+      spriteId: 6a12bbc8408747b419329fa80958ed6b
+    - name: Frame_9
+      frameIndex: 9
+      additiveSortOrder: 0
+      cellRect:
+        x: 6
+        y: 1
+        width: 39
+        height: 62
+      spriteId: 27a6bbde0ec5e9a4090847ee54f5860b
+>>>>>>> a46861ea57a2af159dea7341ec1b7e246637b692:Assets/Sprites/Player_Rubens/Sprites_Rubens/Idle_Player.ase.meta
     linkedCells: []
     parentIndex: -1
   platformSettings:
@@ -459,42 +674,6 @@ ScriptedImporter:
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
-  - name: DefaultTexturePlatform
-    overridden: 0
-    ignorePlatformSupport: 0
-    maxTextureSize: 2048
-    resizeAlgorithm: 1
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
-  - name: Standalone
-    overridden: 0
-    ignorePlatformSupport: 0
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
-  - name: WebGL
-    overridden: 0
-    ignorePlatformSupport: 0
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
     compressionQuality: 50
     forceMaximumCompressionQuality_BC6H_BC7: 0
     crunchedCompression: 0
