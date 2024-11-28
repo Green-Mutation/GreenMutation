@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 12414258084e50f4b8523d22b0895e0c
+guid: 463bae201aefe244ba5e62f8eab96602
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8437059043502135610
-    second: Cena Bonus Exterior_0
+      213: 1293702781859346571
+    second: caixa de interacao hit_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -49,9 +49,9 @@ TextureImporter:
   spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 0
-  alignment: 0
-  spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  alignment: 9
+  spritePivot: {x: 0.56073153, y: 0.24120085}
+  spritePixelsToUnits: 55
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,8 +72,8 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 4096
-    resizeAlgorithm: 1
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
     compressionQuality: 50
@@ -113,23 +113,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Cena Bonus Exterior_0
+      name: caixa de interacao hit_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 2254
-        height: 384
+        x: 2
+        y: 2
+        width: 36
+        height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a3911f4af74761570800000000000000
-      internalID: 8437059043502135610
+      spriteID: b8839a563d724f110800000000000000
+      internalID: 1293702781859346571
       vertices: []
       indices: 
       edges: []
@@ -139,7 +139,7 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
-    internalID: 0
+    internalID: 1537655665
     vertices: []
     indices: 
     edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Cena Bonus Exterior_0: 8437059043502135610
+      caixa de interacao hit_0: 1293702781859346571
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
