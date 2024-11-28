@@ -11,6 +11,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Fase01.unity
     guid: e2e6a4a70aa87a241b14de51dc8518d8
+  - enabled: 1
+    path: "Assets/Scenes/Pr\xF3logo.unity"
+    guid: ba296d3d0c87acc4987d4a29e108c1d4
+  - enabled: 1
+    path: Assets/Scenes/Fase02.unity
+    guid: 3afa0f88d0ddbca43a0a587ae1ac7c6b
+  - enabled: 1
+    path: Assets/Scenes/FaseBonus.unity
+    guid: 7889955c35c0af446b46da99984a3096
+  - enabled: 1
+    path: Assets/Scenes/FaseBonusBunker.unity
+    guid: 1e2d14fa79fc06941947121e9da7b85d
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

@@ -21,7 +21,7 @@ public class LevelLoader : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Return))
         {
             // Mudar de Cena
-            StartCoroutine(CarregarFase("Fase01"));
+            StartCoroutine(CarregarFase("Prólogo"));
         }
     }
 
