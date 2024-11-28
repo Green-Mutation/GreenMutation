@@ -30,6 +30,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         PlayerMove();
+        UpdadeAnimator();
         playerRigidBody.MovePosition(playerRigidBody.position + playerSpeed * Time.fixedDeltaTime * playerDirection);
 
     }
