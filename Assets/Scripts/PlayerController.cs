@@ -29,6 +29,18 @@ public class PlayerController : MonoBehaviour
         UpdadeAnimator();
         playerRigidBody.MovePosition(playerRigidBody.position + playerSpeed * Time.fixedDeltaTime * playerDirection);
 
+
+        // jab ataque
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            if (isWalk == false)
+            {
+                PlayerJab();
+
+            }
+        }
+
+
     }
 
 
@@ -83,6 +95,6 @@ public class PlayerController : MonoBehaviour
 
     void PlayerJab ()
     {
-
+        playerAnimator.SetTrigger("IsJab");
     }
 }
