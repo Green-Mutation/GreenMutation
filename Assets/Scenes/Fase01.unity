@@ -546,7 +546,7 @@ BoxCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 32
+    m_Bits: 0
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -567,8 +567,8 @@ BoxCollider2D:
   m_Offset: {x: -0.15348947, y: 0.072252095}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.55, y: 0}
-    oldSize: {x: 0.5714286, y: 0.87142855}
+    pivot: {x: 0.44736844, y: 0}
+    oldSize: {x: 0.54285717, y: 0.8857143}
     newSize: {x: 0.5714286, y: 0.8857143}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -598,11 +598,11 @@ Rigidbody2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 32
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &608983295
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -615,7 +615,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9af50780dc64e347838157da8696006, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerSpeed: 1
+  playerSpeed: 1.5
   playerDirection: {x: 0, y: 0}
 --- !u!1 &970227266
 GameObject:
@@ -806,21 +806,24 @@ EdgeCollider2D:
   - {x: -1.2747059, y: 1.2896736}
   - {x: -1.4203949, y: 1.4339314}
   - {x: -1.5425453, y: 1.3603064}
-  - {x: -1.5308895, y: 0.38220775}
-  - {x: -1.4266205, y: 0.2901665}
-  - {x: -1.4318275, y: 0.178321}
-  - {x: -1.3829498, y: 0.10912621}
-  - {x: -1.2291203, y: 0.055644155}
-  - {x: -1.2252312, y: 0.10328412}
-  - {x: -1.1100864, y: 0.13572323}
-  - {x: -0.9747791, y: 0.097147346}
-  - {x: -0.89372635, y: 0.13174546}
-  - {x: -0.76404, y: 0.13977861}
-  - {x: -0.7816677, y: 0.08892429}
-  - {x: -0.88136864, y: 0.07814407}
-  - {x: -0.9297409, y: 0.040100694}
-  - {x: -1.0680199, y: -0.009281516}
-  - {x: 0.5, y: 0}
+  - {x: -1.5771275, y: 1.3647466}
+  - {x: -2.0277042, y: 1.3593998}
+  - {x: -2.6108742, y: 1.3284694}
+  - {x: -3.1919785, y: 1.0916649}
+  - {x: -3.6796856, y: 1.0728608}
+  - {x: -3.1267319, y: 0.56565523}
+  - {x: -1.9076767, y: -0.20527565}
+  - {x: -0.9227619, y: -0.48081672}
+  - {x: -0.50071144, y: -0.34796453}
+  - {x: -0.18607521, y: -0.33993125}
+  - {x: 0.062160492, y: -0.37344646}
+  - {x: 0.15952492, y: -2.8280442}
+  - {x: 0.1972866, y: -0.39337242}
+  - {x: -0.9871044, y: -0.79531276}
+  - {x: -2.675375, y: -0.21413803}
+  - {x: -2.6816444, y: -0.76280415}
+  - {x: -2.5858746, y: -0.7648728}
+  - {x: -1.0275097, y: -0.79853344}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0

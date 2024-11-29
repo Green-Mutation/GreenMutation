@@ -14,15 +14,11 @@ public class PlayerController : MonoBehaviour
     private bool playerFaceRight = true;
 
 
-
-
-
     void Start()
     {
-        // obtem e inicializa as propriedades do Rigidbody2D
+        //inicializa as propriedades do Rigidbody2D e Animator
         playerRigidBody = GetComponent<Rigidbody2D>();
-
-        // obtem e inicializa as propriedades do Animator
+                
         playerAnimator = GetComponent<Animator>();
     }
 
@@ -38,11 +34,10 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        // verificar se o player esta em movimento
+        //movimento player
         if (playerDirection.x != 0 || playerDirection.y != 0)
         {
             isWalk = true;
-
         }
         else
         {
@@ -56,18 +51,15 @@ public class PlayerController : MonoBehaviour
 
 
     void PlayerMove()
-    {
-        // Pega a entrada do jogador, e cria um Vector2 para usar no playerDirection
+    {        
         playerDirection = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
 
 
-        //se o player vai para a Esquerda e esta olhando para a DIREITA
+        //flip
         if (playerDirection.x < 0 && playerFaceRight)
         {
             Flip();
-        }
-
-        //se o player vai pra a Direita e esta olhando para a ESQUERDA
+        }        
         else if (playerDirection.x > 0 && !playerFaceRight)
         {
             Flip();
@@ -85,10 +77,12 @@ public class PlayerController : MonoBehaviour
 
     void UpdadeAnimator()
     {
-        // definir o valor do parametro do animator, igual a propriedade isWalking
-        // parametro entre aspas "IsWalking" é um parametro do Animator - Unity
-        // isWalking sem aspas é a variavel criada no codigo acima
+        // definir o valor do parametro do animator, igual a propriedade isWalk        
         playerAnimator.SetBool("IsWalk", isWalk);
     }
 
+    void PlayerJab ()
+    {
+
+    }
 }
