@@ -35,7 +35,7 @@ ScriptedImporter:
     spriteMeshType: 0
     alignment: 0
     spritePivot: {x: 0.5, y: 0.5}
-    spritePixelsToUnits: 70
+    spritePixelsToUnits: 100
     spriteBorder: {x: 0, y: 0, z: 0, w: 0}
     spriteGenerateFallbackPhysicsShape: 0
     generateCubemap: 6
@@ -97,7 +97,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638684945814831696
+  platformSettingsDirtyTick: 0
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -134,7 +134,7 @@ ScriptedImporter:
       y: 144
       width: 40
       height: 62
-    spriteID: 82466a952014ae149a7552918c41a4d2
+    spriteID: 98609d53d4f668c4faf304c5c1f40182
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -155,7 +155,7 @@ ScriptedImporter:
       y: 74
       width: 46
       height: 62
-    spriteID: 5dbea1065e69bdc4190ef8ee4d7c1cfb
+    spriteID: 07235cb1f7c61f743b1496db94b6caa7
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -176,7 +176,7 @@ ScriptedImporter:
       y: 4
       width: 51
       height: 62
-    spriteID: 647cb9eef3deeab45b9b7b68fd99a868
+    spriteID: affd84a2884b283429c0958890286667
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -197,7 +197,7 @@ ScriptedImporter:
       y: 4
       width: 38
       height: 62
-    spriteID: 365cad194ac8ce043ae24f43d3fdabb3
+    spriteID: c267bc5b92c2b284780edc473a6c2b55
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -206,91 +206,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 63, y: 4}
-  spriteSheetImportData:
-  - name: Rubens_Jab_0
-    originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 7
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 144
-      width: 40
-      height: 62
-    spriteID: 3ebe6fe7ec969d945bc3a647ee7fc17a
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 0, y: 0}
-  - name: Rubens_Jab_1
-    originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 7
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 74
-      width: 46
-      height: 62
-    spriteID: 6d19733a76c36ad4fab16c6ab3aeb728
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 0, y: 0}
-  - name: Rubens_Jab_2
-    originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 7
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 4
-      width: 51
-      height: 62
-    spriteID: bc37970ca23981745a982216892f0e57
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 0, y: 0}
-  - name: Rubens_Jab_3
-    originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 7
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 63
-      y: 4
-      width: 38
-      height: 62
-    spriteID: e6c251631ef4dca40830d26ec71d9361
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 0, y: 0}
+  spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
     guid: 1239208815
@@ -307,7 +223,7 @@ ScriptedImporter:
         y: 0
         width: 40
         height: 62
-      spriteId: 82466a952014ae149a7552918c41a4d2
+      spriteId: 98609d53d4f668c4faf304c5c1f40182
     - name: Frame_1
       frameIndex: 1
       additiveSortOrder: 0
@@ -316,7 +232,7 @@ ScriptedImporter:
         y: 0
         width: 46
         height: 62
-      spriteId: 5dbea1065e69bdc4190ef8ee4d7c1cfb
+      spriteId: 07235cb1f7c61f743b1496db94b6caa7
     - name: Frame_2
       frameIndex: 2
       additiveSortOrder: 0
@@ -325,7 +241,7 @@ ScriptedImporter:
         y: 0
         width: 51
         height: 62
-      spriteId: 647cb9eef3deeab45b9b7b68fd99a868
+      spriteId: affd84a2884b283429c0958890286667
     - name: Frame_3
       frameIndex: 3
       additiveSortOrder: 0
@@ -334,7 +250,7 @@ ScriptedImporter:
         y: 0
         width: 38
         height: 62
-      spriteId: 365cad194ac8ce043ae24f43d3fdabb3
+      spriteId: c267bc5b92c2b284780edc473a6c2b55
     linkedCells: []
     parentIndex: -1
   platformSettings:
@@ -345,42 +261,6 @@ ScriptedImporter:
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
-  - name: DefaultTexturePlatform
-    overridden: 0
-    ignorePlatformSupport: 0
-    maxTextureSize: 4096
-    resizeAlgorithm: 1
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
-  - name: Standalone
-    overridden: 0
-    ignorePlatformSupport: 0
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
-  - name: WebGL
-    overridden: 0
-    ignorePlatformSupport: 0
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
     compressionQuality: 50
     forceMaximumCompressionQuality_BC6H_BC7: 0
     crunchedCompression: 0
