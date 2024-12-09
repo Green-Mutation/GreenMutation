@@ -42,7 +42,6 @@ public class PlayerController : MonoBehaviour
             if (isWalk == false)
             {
                 PlayerJab();
-
             }
         }
 
