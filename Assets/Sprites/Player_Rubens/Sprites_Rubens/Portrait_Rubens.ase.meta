@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: be88094b1c9800d4c9d231e654947a5a
+guid: 7ead7e22046170d49a37a6f744999f80
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -71,7 +71,7 @@ ScriptedImporter:
     textureFormatSet: 0
     applyGammaDecoding: 0
   previousAsepriteImporterSettings:
-    fileImportMode: 0
+    fileImportMode: 1
     importHiddenLayers: 0
     layerImportMode: 1
     defaultPivotSpace: 0
@@ -84,7 +84,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   asepriteImporterSettings:
-    fileImportMode: 0
+    fileImportMode: 1
     importHiddenLayers: 0
     layerImportMode: 1
     defaultPivotSpace: 0
@@ -97,7 +97,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638689233004524531
+  platformSettingsDirtyTick: 638693530080725604
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -122,51 +122,9 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Frame_0
+  - name: Portrait_Rubens
     originalName: 
-    pivot: {x: 0.42500004, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 144
-      width: 40
-      height: 62
-    spriteID: 98609d53d4f668c4faf304c5c1f40182
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 144}
-  - name: Frame_1
-    originalName: 
-    pivot: {x: 0.36956525, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 74
-      width: 46
-      height: 62
-    spriteID: 07235cb1f7c61f743b1496db94b6caa7
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 74}
-  - name: Frame_2
-    originalName: 
-    pivot: {x: 0.31372547, y: 0}
+    pivot: {x: 0.48214287, y: -0.035714284}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -174,9 +132,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 51
-      height: 62
-    spriteID: affd84a2884b283429c0958890286667
+      width: 28
+      height: 28
+    spriteID: 7eddd44414ac22e49bfe8b5f36abbada
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -185,156 +143,24 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: Frame_3
-    originalName: 
-    pivot: {x: 0.44736844, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 63
-      y: 4
-      width: 38
-      height: 62
-    spriteID: c267bc5b92c2b284780edc473a6c2b55
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 63, y: 4}
-  spriteSheetImportData:
-  - name: Rubens_Jab_0
-    originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 7
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 144
-      width: 40
-      height: 62
-    spriteID: d64b386d09c57d8408d2857c9fcb1fb5
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 0, y: 0}
-  - name: Rubens_Jab_1
-    originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 7
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 74
-      width: 46
-      height: 62
-    spriteID: c62cf3a5a541a8e4d996d58a6b76e4bf
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 0, y: 0}
-  - name: Rubens_Jab_2
-    originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 7
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 4
-      width: 51
-      height: 62
-    spriteID: 6e05c3baca91dde4c91c154c17b843d8
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 0, y: 0}
-  - name: Rubens_Jab_3
-    originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 7
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 63
-      y: 4
-      width: 38
-      height: 62
-    spriteID: c89266ae4aecd6347ba29fceb17f59af
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 0, y: 0}
+  spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 1239208815
-    name: Rubens_Jab
+    guid: 1591817813
+    name: Portrait_Rubens
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Frame_0
+    - name: Portrait_Rubens
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 31
-        y: 0
-        width: 40
-        height: 62
-      spriteId: 98609d53d4f668c4faf304c5c1f40182
-    - name: Frame_1
-      frameIndex: 1
-      additiveSortOrder: 0
-      cellRect:
-        x: 31
-        y: 0
-        width: 46
-        height: 62
-      spriteId: 07235cb1f7c61f743b1496db94b6caa7
-    - name: Frame_2
-      frameIndex: 2
-      additiveSortOrder: 0
-      cellRect:
-        x: 32
-        y: 0
-        width: 51
-        height: 62
-      spriteId: affd84a2884b283429c0958890286667
-    - name: Frame_3
-      frameIndex: 3
-      additiveSortOrder: 0
-      cellRect:
-        x: 31
-        y: 0
-        width: 38
-        height: 62
-      spriteId: c267bc5b92c2b284780edc473a6c2b55
+        x: 3
+        y: 1
+        width: 28
+        height: 28
+      spriteId: 7eddd44414ac22e49bfe8b5f36abbada
     linkedCells: []
     parentIndex: -1
   platformSettings:
@@ -389,4 +215,4 @@ ScriptedImporter:
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 96, y: 96}
+  canvasSize: {x: 33, y: 31}
