@@ -5,6 +5,7 @@ public class PlayerController : MonoBehaviour
     //iniciando rigidbody e animator
     private Rigidbody2D playerRigidBody;
     public float playerSpeed = 1f;
+    public float currentSpeed;
 
     public Vector2 playerDirection;
 
@@ -12,7 +13,10 @@ public class PlayerController : MonoBehaviour
     private Animator playerAnimator;
 
     private bool playerFaceRight = true;
-
+    private bool isDead;
+    public int maxHealth = 10;
+    public int currentHealth;
+    public Sprite playerImage;
 
     void Start()
     {
@@ -20,6 +24,8 @@ public class PlayerController : MonoBehaviour
         playerRigidBody = GetComponent<Rigidbody2D>();
                 
         playerAnimator = GetComponent<Animator>();
+
+        currentHealth = maxHealth;
     }
 
     
@@ -31,7 +37,7 @@ public class PlayerController : MonoBehaviour
 
 
         // jab ataque
-        if (Input.GetKeyDown(KeyCode.Q))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             if (isWalk == false)
             {
@@ -96,5 +102,25 @@ public class PlayerController : MonoBehaviour
     void PlayerJab ()
     {
         playerAnimator.SetTrigger("IsJab");
+    }
+
+    void ZeroSpeed()
+    {
+        currentSpeed = 0;
+    }
+
+    void ResetSpeed()
+    {
+        currentSpeed = playerSpeed;
+    }
+
+    public void TakeDamage(int damage)
+    {
+        if (!isDead)
+        {
+            currentHealth -= damage;
+            playerAnimator.SetTrigger("HitDamage");
+            FindFirstObjectByType<UIManager>().UpdatePlayerHealth(currentHealth);
+        }
     }
 }
