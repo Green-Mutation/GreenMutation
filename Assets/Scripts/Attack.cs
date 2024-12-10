@@ -19,6 +19,7 @@ public class Attack : MonoBehaviour
         // Ao colidir, salva na variavel enemy, o inimigo que foi colidido
         EnemyMeleeController enemy = collision.GetComponent<EnemyMeleeController>();
 
+
         // Se a colisão foi com um inimigo
         if (enemy != null)
         {
