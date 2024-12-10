@@ -22,6 +22,7 @@ public class Attack : MonoBehaviour
         //ao colidir, salva na variavel player, o player que foi atingido
         PlayerController player = collision.GetComponent<PlayerController>();
 
+
         // Se a colisão foi com um inimigo
         if (enemy != null)
         {
