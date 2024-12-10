@@ -138,7 +138,7 @@ public class EnemyAbacateController : MonoBehaviour
         }
 
         // Caso estaeja perto do Player, parar  a movimentação
-        if (Mathf.Abs(targetDistance.x) < 0.2f)
+        if (Mathf.Abs(targetDistance.x) < 0.4f)
         {
             horizontalForce = 0;
         }
@@ -148,7 +148,7 @@ public class EnemyAbacateController : MonoBehaviour
 
         // ATAQUE
         // Se estiver perto do Player e o timer do jogo for maior que o valor de nextAttack 
-        if (Mathf.Abs(targetDistance.x) < 0.2f && Mathf.Abs(targetDistance.y) < 0.05f && Time.time > nextAttack)
+        if (Mathf.Abs(targetDistance.x) < 0.4f && Mathf.Abs(targetDistance.y) < 0.05f && Time.time > nextAttack)
         {
             // Esse comando executa a naimação de ataque do inimigo
             animator.SetTrigger("Attack");
