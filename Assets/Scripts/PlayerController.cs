@@ -119,7 +119,7 @@ public class PlayerController : MonoBehaviour
         {
             currentHealth -= damage;
             playerAnimator.SetTrigger("HitDamage");
-            FindFirstObjectByType<UIManager>().UpdatePlayerHealth(currentHealth);
+            FindAnyObjectByType<UIManager>().UpdatePlayerHealth(currentHealth);
         }
     }
 }
