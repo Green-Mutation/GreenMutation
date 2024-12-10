@@ -1,7 +1,13 @@
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class PlayerController : MonoBehaviour
 {
+    //Variaveis da poção 
+    public Text pocaoTxt;
+    private int pocao;
+
     //iniciando rigidbody e animator
     private Rigidbody2D playerRigidBody;
     public float playerSpeed = 1f;
@@ -26,6 +32,9 @@ public class PlayerController : MonoBehaviour
         playerAnimator = GetComponent<Animator>();
 
         currentHealth = maxHealth;
+
+        //recebe o 0 no inicio
+        pocao = 0;
     }
 
     
@@ -45,8 +54,12 @@ public class PlayerController : MonoBehaviour
             }
         }
 
+        //transforma pocao em texto no UI
+        //pocaoTxt.text = pocao.ToString();
 
     }
+
+    
 
 
     private void FixedUpdate()
@@ -120,6 +133,19 @@ public class PlayerController : MonoBehaviour
             currentHealth -= damage;
             playerAnimator.SetTrigger("HitDamage");
             FindAnyObjectByType<UIManager>().UpdatePlayerHealth(currentHealth);
+        }
+    }
+
+    //colisao da poção
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        // usa a tag da unity
+        if (collision.gameObject.CompareTag("Pocao"))
+        {
+            //recebe ela mesma
+            pocao = pocao + 1;
+            //destroi objeto
+            Destroy(collision.gameObject);
         }
     }
 }
