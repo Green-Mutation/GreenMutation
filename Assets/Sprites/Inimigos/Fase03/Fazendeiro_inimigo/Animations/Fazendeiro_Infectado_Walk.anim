@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Rosa_Idle
+  m_Name: Fazendeiro_Infectado_Walk
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -21,19 +21,15 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: 2547635283362118328, guid: f83c4d7f4c54c08469c689f9a5c60ca6, type: 3}
+      value: {fileID: 5659303703697697259, guid: c91b2ed6d6ba10b47b959204dbe1d32e, type: 3}
     - time: 0.16666667
-      value: {fileID: 2996687155160677985, guid: f83c4d7f4c54c08469c689f9a5c60ca6, type: 3}
+      value: {fileID: 8269524359763995871, guid: c91b2ed6d6ba10b47b959204dbe1d32e, type: 3}
     - time: 0.33333334
-      value: {fileID: -5564661359897835643, guid: f83c4d7f4c54c08469c689f9a5c60ca6, type: 3}
+      value: {fileID: -1183331779410462550, guid: c91b2ed6d6ba10b47b959204dbe1d32e, type: 3}
     - time: 0.5
-      value: {fileID: 1976198362084111210, guid: f83c4d7f4c54c08469c689f9a5c60ca6, type: 3}
+      value: {fileID: 3915746591033343460, guid: c91b2ed6d6ba10b47b959204dbe1d32e, type: 3}
     - time: 0.6666667
-      value: {fileID: 1322568600844678609, guid: f83c4d7f4c54c08469c689f9a5c60ca6, type: 3}
-    - time: 0.8333333
-      value: {fileID: 7367912100295062697, guid: f83c4d7f4c54c08469c689f9a5c60ca6, type: 3}
-    - time: 1
-      value: {fileID: -3433636709188734663, guid: f83c4d7f4c54c08469c689f9a5c60ca6, type: 3}
+      value: {fileID: 7413098368069857983, guid: c91b2ed6d6ba10b47b959204dbe1d32e, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -56,19 +52,17 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: 2547635283362118328, guid: f83c4d7f4c54c08469c689f9a5c60ca6, type: 3}
-    - {fileID: 2996687155160677985, guid: f83c4d7f4c54c08469c689f9a5c60ca6, type: 3}
-    - {fileID: -5564661359897835643, guid: f83c4d7f4c54c08469c689f9a5c60ca6, type: 3}
-    - {fileID: 1976198362084111210, guid: f83c4d7f4c54c08469c689f9a5c60ca6, type: 3}
-    - {fileID: 1322568600844678609, guid: f83c4d7f4c54c08469c689f9a5c60ca6, type: 3}
-    - {fileID: 7367912100295062697, guid: f83c4d7f4c54c08469c689f9a5c60ca6, type: 3}
-    - {fileID: -3433636709188734663, guid: f83c4d7f4c54c08469c689f9a5c60ca6, type: 3}
+    - {fileID: 5659303703697697259, guid: c91b2ed6d6ba10b47b959204dbe1d32e, type: 3}
+    - {fileID: 8269524359763995871, guid: c91b2ed6d6ba10b47b959204dbe1d32e, type: 3}
+    - {fileID: -1183331779410462550, guid: c91b2ed6d6ba10b47b959204dbe1d32e, type: 3}
+    - {fileID: 3915746591033343460, guid: c91b2ed6d6ba10b47b959204dbe1d32e, type: 3}
+    - {fileID: 7413098368069857983, guid: c91b2ed6d6ba10b47b959204dbe1d32e, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 1.1666666
+    m_StopTime: 0.8333334
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -87,11 +81,4 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events:
-  - time: 0
-    functionName: ResetSpeed
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
+  m_Events: []
