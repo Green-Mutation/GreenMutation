@@ -1,10 +1,11 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
 
 public class PlayerController : MonoBehaviour
 {
-    //Variaveis da poção 
+    //Variaveis da poï¿½ï¿½o 
     public Text pocaoTxt;
     private int pocao;
 
@@ -19,6 +20,9 @@ public class PlayerController : MonoBehaviour
     private Animator playerAnimator;
 
     private bool playerFaceRight = true;
+    private int punchCount;
+    private float timeCross = 0.75f;
+    private bool comboControl;
     private bool isDead;
     public int maxHealth = 10;
     public int currentHealth;
@@ -50,7 +54,20 @@ public class PlayerController : MonoBehaviour
         {
             if (isWalk == false)
             {
-                PlayerJab();
+                if (punchCount < 2)
+                {
+                    PlayerJab();
+                    punchCount++;
+                    if (!comboControl)
+                    {
+                        StartCoroutine(CrossController());
+                    }
+                }
+                else if (punchCount >= 2)
+                {
+                    PlayerCross();
+                    punchCount = 0;
+                }
             }
         }
 
@@ -116,6 +133,21 @@ public class PlayerController : MonoBehaviour
         playerAnimator.SetTrigger("IsJab");
     }
 
+    void PlayerCross()
+    {
+        // Acessa a animaï¿½ï¿½o do Cross
+        // Ativa o gatilho de ataque Cross
+        playerAnimator.SetTrigger("isCross");
+    }
+
+    IEnumerator CrossController()
+    {
+        comboControl = true;
+        yield return new WaitForSeconds(timeCross);
+        punchCount = 0;
+        comboControl = false;
+    }
+
     void ZeroSpeed()
     {
         currentSpeed = 0;
@@ -136,7 +168,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    //colisao da poção
+    //colisao da poï¿½ï¿½o
     private void OnTriggerEnter2D(Collider2D collision)
     {
         // usa a tag da unity
