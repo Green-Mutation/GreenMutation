@@ -207,31 +207,10 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 63, y: 4}
   spriteSheetImportData:
-  - name: Rubens_Jab_0
-    originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 7
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 144
-      width: 40
-      height: 62
-    spriteID: d64b386d09c57d8408d2857c9fcb1fb5
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 0, y: 0}
   - name: Rubens_Jab_1
     originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 7
+    pivot: {x: 0.45, y: 0.04}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
     rect:
@@ -251,8 +230,8 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Rubens_Jab_2
     originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 7
+    pivot: {x: 0.45, y: 0.04}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
     rect:
@@ -272,8 +251,8 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Rubens_Jab_3
     originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 7
+    pivot: {x: 0.45, y: 0.04}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
     rect:
@@ -283,6 +262,27 @@ ScriptedImporter:
       width: 38
       height: 62
     spriteID: c89266ae4aecd6347ba29fceb17f59af
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Rubens_Jab_0
+    originalName: 
+    pivot: {x: 0.45, y: 0.04}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 144
+      width: 40
+      height: 62
+    spriteID: 66de2d09cbeab254287efae65928ba52
     spriteBone: []
     spriteOutline: []
     vertices: []
