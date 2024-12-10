@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 356b1b5151fb4a6429b6f3cfe6343bed
+guid: 3c2827ab5065f504d97d84a1a15a7844
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,7 +97,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638694411718735696
+  platformSettingsDirtyTick: 0
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -122,9 +122,9 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: "duas po\xE7\xF5es sprite"
+  - name: Portrait_ArvoreBoss
     originalName: 
-    pivot: {x: 0.4505191, y: 0.08951051}
+    pivot: {x: 0.49677417, y: -0.0075757573}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -132,9 +132,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 11
-      height: 15
-    spriteID: babc80200d65c1843babb4fd23e3a270
+      width: 155
+      height: 132
+    spriteID: 06321ba440e4e6341b5f905ff6db0763
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -146,21 +146,21 @@ ScriptedImporter:
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: -1892269991
-    name: "duas po\xE7\xF5es sprite"
+    guid: 456141818
+    name: Portrait_ArvoreBoss
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: "duas po\xE7\xF5es sprite"
+    - name: Portrait_ArvoreBoss
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 2
-        y: 0
-        width: 11
-        height: 15
-      spriteId: babc80200d65c1843babb4fd23e3a270
+        x: 5
+        y: 1
+        width: 155
+        height: 132
+      spriteId: 06321ba440e4e6341b5f905ff6db0763
     linkedCells: []
     parentIndex: -1
   platformSettings:
@@ -176,43 +176,7 @@ ScriptedImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     androidETC2FallbackOverride: 0
-  - name: DefaultTexturePlatform
-    overridden: 0
-    ignorePlatformSupport: 0
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
-  - name: Standalone
-    overridden: 0
-    ignorePlatformSupport: 0
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
-  - name: WebGL
-    overridden: 0
-    ignorePlatformSupport: 0
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 16, y: 16}
+  canvasSize: {x: 164, y: 138}

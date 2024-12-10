@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: da1696ed216c518438359df23bc41d80
+guid: 0a92fda43920bbf40bf38c14975d2a0a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8627514932549121676
-    second: Mesa-Feiticeiro_0
+      213: 1312522119557559670
+    second: Mesa-Pocao_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -50,7 +50,7 @@ TextureImporter:
   spriteExtrude: 1
   spriteMeshType: 0
   alignment: 9
-  spritePivot: {x: 0.49378356, y: 0.036045987}
+  spritePivot: {x: 0.49999997, y: 0.28212327}
   spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Mesa-Feiticeiro_0
+      name: Mesa-Pocao_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 64
-        height: 64
+        x: 42
+        y: 36
+        width: 115
+        height: 97
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 479080f11e8e44880800000000000000
-      internalID: -8627514932549121676
+      spriteID: 6753218e9e3073210800000000000000
+      internalID: 1312522119557559670
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Mesa-Feiticeiro_0: -8627514932549121676
+      Mesa-Pocao_0: 1312522119557559670
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
