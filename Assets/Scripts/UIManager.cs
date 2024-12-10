@@ -21,6 +21,7 @@ public class UIManager : MonoBehaviour
     {
         // Obtém os dados do Player
         player = FindFirstObjectByType<PlayerController>();
+        
 
         // Definir o valor máximo da barra de vida igual ao máximo da vida do player
         playerHealthBar.maxValue = player.maxHealth;
@@ -63,5 +64,7 @@ public class UIManager : MonoBehaviour
 
         // Habilita a enemyUI, deixando-a visível
         enemyUI.SetActive(true);
+
+     
     }
 }

@@ -33,10 +33,12 @@ public class EnemyMeleeController : MonoBehaviour
     // Variaveis para mecânica de dano
     public int maxHealth;
     public int currentHealth;
+    public Sprite enemyImage;
 
     public float staggerTime = 0.5f;
     private float damageTimer;
     private bool isTakingDamage;
+    
 
 
 
@@ -51,6 +53,9 @@ public class EnemyMeleeController : MonoBehaviour
 
         // Inicializar a velocidade do inimigo
         currentSpeed = enemySpeed;
+
+        // Inicializar a vida do inimigo
+        currentHealth = maxHealth;
     }
 
     void Update()

@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -13,6 +14,9 @@ public class PlayerController : MonoBehaviour
     private Animator playerAnimator;
 
     private bool playerFaceRight = true;
+    private int punchCount;
+    private float timeCross = 0.75f;
+    private bool comboControl;
     private bool isDead;
     public int maxHealth = 10;
     public int currentHealth;
@@ -41,11 +45,22 @@ public class PlayerController : MonoBehaviour
         {
             if (isWalk == false)
             {
-                PlayerJab();
+                if (punchCount < 2)
+                {
+                    PlayerJab();
+                    punchCount++;
+                    if (!comboControl)
+                    {
+                        StartCoroutine(CrossController());
+                    }
+                }
+                else if (punchCount >= 2)
+                {
+                    PlayerCross();
+                    punchCount = 0;
+                }
             }
         }
-
-
     }
 
 
@@ -101,6 +116,21 @@ public class PlayerController : MonoBehaviour
     void PlayerJab ()
     {
         playerAnimator.SetTrigger("IsJab");
+    }
+
+    void PlayerCross()
+    {
+        // Acessa a animação do Cross
+        // Ativa o gatilho de ataque Cross
+        playerAnimator.SetTrigger("isCross");
+    }
+
+    IEnumerator CrossController()
+    {
+        comboControl = true;
+        yield return new WaitForSeconds(timeCross);
+        punchCount = 0;
+        comboControl = false;
     }
 
     void ZeroSpeed()
