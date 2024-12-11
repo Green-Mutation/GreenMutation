@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
 
     //iniciando rigidbody e animator
     private Rigidbody2D playerRigidBody;
+    private Animator animator;
     public float playerSpeed = 1f;
     public float currentSpeed;
 
@@ -37,7 +38,7 @@ public class PlayerController : MonoBehaviour
 
         currentHealth = maxHealth;
 
-        //recebe o 0 no inicio
+        ////recebe o 0 no inicio
         pocao = 0;
     }
 
@@ -72,11 +73,11 @@ public class PlayerController : MonoBehaviour
         }
 
         //transforma pocao em texto no UI
-        //pocaoTxt.text = pocao.ToString();
+        pocaoTxt.text = pocao.ToString();
 
     }
 
-    
+
 
 
     private void FixedUpdate()
@@ -148,6 +149,25 @@ public class PlayerController : MonoBehaviour
         comboControl = false;
     }
 
+    public void TakeDamage(int damage)
+    {
+        if (!isDead)
+        {
+            currentHealth -= damage;
+            playerAnimator.SetTrigger("HitDamage");
+            FindAnyObjectByType<UIManager>().UpdatePlayerHealth(currentHealth);
+
+            if (currentHealth <= 0)
+            {
+                isDead = true;
+
+                ZeroSpeed();
+
+                animator.SetTrigger("isDead");
+            }
+        }
+    }
+
     void ZeroSpeed()
     {
         currentSpeed = 0;
@@ -158,14 +178,9 @@ public class PlayerController : MonoBehaviour
         currentSpeed = playerSpeed;
     }
 
-    public void TakeDamage(int damage)
+    public void DisablePlayer()
     {
-        if (!isDead)
-        {
-            currentHealth -= damage;
-            playerAnimator.SetTrigger("HitDamage");
-            FindAnyObjectByType<UIManager>().UpdatePlayerHealth(currentHealth);
-        }
+        this.gameObject.SetActive(false);
     }
 
     //colisao da po��o
@@ -178,6 +193,8 @@ public class PlayerController : MonoBehaviour
             pocao = pocao + 1;
             //destroi objeto
             Destroy(collision.gameObject);
+
+
         }
     }
 }
