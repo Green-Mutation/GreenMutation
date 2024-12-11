@@ -155,7 +155,7 @@ public class PlayerController : MonoBehaviour
         {
             currentHealth -= damage;
             playerAnimator.SetTrigger("HitDamage");
-            //FindAnyObjectByType<UIManager>().UpdatePlayerHealth(currentHealth);
+            FindAnyObjectByType<UIManager>().UpdatePlayerHealth(currentHealth);
 
             if (currentHealth <= 0)
             {
