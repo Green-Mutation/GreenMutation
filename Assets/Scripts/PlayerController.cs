@@ -1,7 +1,14 @@
+using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class PlayerController : MonoBehaviour
 {
+    //Variaveis da po��o 
+    public Text pocaoTxt;
+    private int pocao;
+
     //iniciando rigidbody e animator
     private Rigidbody2D playerRigidBody;
     public float playerSpeed = 1f;
@@ -13,6 +20,9 @@ public class PlayerController : MonoBehaviour
     private Animator playerAnimator;
 
     private bool playerFaceRight = true;
+    private int punchCount;
+    private float timeCross = 0.75f;
+    private bool comboControl;
     private bool isDead;
     public int maxHealth = 10;
     public int currentHealth;
@@ -26,6 +36,9 @@ public class PlayerController : MonoBehaviour
         playerAnimator = GetComponent<Animator>();
 
         currentHealth = maxHealth;
+
+        //recebe o 0 no inicio
+        pocao = 0;
     }
 
     
@@ -41,12 +54,29 @@ public class PlayerController : MonoBehaviour
         {
             if (isWalk == false)
             {
-                PlayerJab();
+                if (punchCount < 2)
+                {
+                    PlayerJab();
+                    punchCount++;
+                    if (!comboControl)
+                    {
+                        StartCoroutine(CrossController());
+                    }
+                }
+                else if (punchCount >= 2)
+                {
+                    PlayerCross();
+                    punchCount = 0;
+                }
             }
         }
 
+        //transforma pocao em texto no UI
+        //pocaoTxt.text = pocao.ToString();
 
     }
+
+    
 
 
     private void FixedUpdate()
@@ -103,6 +133,21 @@ public class PlayerController : MonoBehaviour
         playerAnimator.SetTrigger("IsJab");
     }
 
+    void PlayerCross()
+    {
+        // Acessa a anima��o do Cross
+        // Ativa o gatilho de ataque Cross
+        playerAnimator.SetTrigger("isCross");
+    }
+
+    IEnumerator CrossController()
+    {
+        comboControl = true;
+        yield return new WaitForSeconds(timeCross);
+        punchCount = 0;
+        comboControl = false;
+    }
+
     void ZeroSpeed()
     {
         currentSpeed = 0;
@@ -119,7 +164,20 @@ public class PlayerController : MonoBehaviour
         {
             currentHealth -= damage;
             playerAnimator.SetTrigger("HitDamage");
-            FindFirstObjectByType<UIManager>().UpdatePlayerHealth(currentHealth);
+            FindAnyObjectByType<UIManager>().UpdatePlayerHealth(currentHealth);
+        }
+    }
+
+    //colisao da po��o
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        // usa a tag da unity
+        if (collision.gameObject.CompareTag("Pocao"))
+        {
+            //recebe ela mesma
+            pocao = pocao + 1;
+            //destroi objeto
+            Destroy(collision.gameObject);
         }
     }
 }
