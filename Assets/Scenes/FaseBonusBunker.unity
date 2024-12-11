@@ -708,24 +708,24 @@ EdgeCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.1
   m_Points:
-  - {x: -0.56851923, y: 0.47165918}
-  - {x: -0.5640758, y: 0.008288562}
-  - {x: -0.4604429, y: -0.09527242}
-  - {x: -0.26216578, y: -0.1610936}
-  - {x: 0.021434307, y: -0.1964562}
-  - {x: 0.34179842, y: -0.14483058}
-  - {x: 0.48764813, y: -0.06515479}
-  - {x: 0.55146086, y: 0.0034037828}
-  - {x: 0.55853236, y: 0.44781828}
+  - {x: -0.48690236, y: 0.44227695}
+  - {x: -0.4824587, y: 0.07358223}
+  - {x: -0.42453158, y: -0.01692009}
+  - {x: -0.26216578, y: -0.07621181}
+  - {x: 0.031228304, y: -0.10504508}
+  - {x: 0.2830341, y: -0.079536915}
+  - {x: 0.44520724, y: 0.00013875961}
+  - {x: 0.48616707, y: 0.022991896}
+  - {x: 0.48344457, y: 0.46414173}
   - {x: 0.2417593, y: 0.45092237}
   - {x: 0.09388137, y: 0.43776965}
   - {x: -0.004891753, y: 0.43547726}
   - {x: -0.26922238, y: 0.44712758}
   - {x: -0.32292628, y: 0.4536425}
-  - {x: -0.46592593, y: 0.45875204}
-  - {x: -0.56560504, y: 0.47019368}
+  - {x: -0.45286703, y: 0.45548737}
+  - {x: -0.4578706, y: 0.4603997}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
@@ -1338,6 +1338,7 @@ GameObject:
   - component: {fileID: 971416057}
   - component: {fileID: 971416056}
   - component: {fileID: 971416055}
+  - component: {fileID: 971416058}
   m_Layer: 0
   m_Name: "duas po\xE7\xF5es sprite"
   m_TagString: Pocao
@@ -1427,7 +1428,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 2
   m_Sprite: {fileID: -8633698242881229649, guid: 356b1b5151fb4a6429b6f3cfe6343bed, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.5372549}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1452,6 +1453,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 166248232}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &971416058
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 971416054}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 02e55388b20766344951db987fb6f003, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1205536148
 GameObject:
   m_ObjectHideFlags: 0
