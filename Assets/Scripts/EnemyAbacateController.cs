@@ -34,6 +34,8 @@ public class EnemyAbacateController : MonoBehaviour
     public int maxHealth;
     public int currentHealth;
 
+    public Sprite enemyImage;
+
     public float staggerTime = 0.5f;
     private float damageTimer;
     private bool isTakingDamage;
@@ -178,6 +180,19 @@ public class EnemyAbacateController : MonoBehaviour
             currentHealth -= damage;
 
             animator.SetTrigger("hitDamage");
+
+            FindFirstObjectByType<UIManager>().UpdateEnemyUI(maxHealth, currentHealth, enemyImage);
+
+            // Verificar se está morto
+            if (currentHealth <= 0)
+            {
+                isDead = true;
+
+                currentSpeed = 0;
+
+                animator.SetTrigger("Dead");
+            }
+
         }
     }
 
@@ -189,5 +204,9 @@ public class EnemyAbacateController : MonoBehaviour
     void ResetSpeed()
     {
         currentSpeed = enemySpeed;
+    }
+    public void DisableEnemy()
+    {
+        gameObject.SetActive(false);
     }
 }
