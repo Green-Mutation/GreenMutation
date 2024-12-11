@@ -181,7 +181,7 @@ public class EnemyMeleeController : MonoBehaviour
 
             animator.SetTrigger("hitDamage");
 
-            FindFirstObjectByType<UIManager>().UpdateEnemyUI(maxHealth, currentHealth, enemyImage);
+            //FindFirstObjectByType<UIManager>().UpdateEnemyUI(maxHealth, currentHealth, enemyImage);
 
             if (currentHealth <= 0)
             {
