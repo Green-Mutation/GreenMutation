@@ -180,7 +180,18 @@ public class EnemyMeleeController : MonoBehaviour
             currentHealth -= damage;
 
             animator.SetTrigger("hitDamage");
-        }
+
+            FindFirstObjectByType<UIManager>().UpdateEnemyUI(maxHealth, currentHealth, enemyImage);
+
+            if (currentHealth <= 0)
+            {
+                isDead = true;
+
+                zeroSpeed();
+
+                animator.SetTrigger("Dead");
+            }
+        }      
     }
 
     void zeroSpeed()
@@ -191,5 +202,10 @@ public class EnemyMeleeController : MonoBehaviour
     void ResetSpeed()
     {
         currentSpeed = enemySpeed;
+    }
+
+    public void DisableEnemy()
+    {
+        this.gameObject.SetActive(false);
     }
 }
