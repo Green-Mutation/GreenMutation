@@ -51,6 +51,9 @@ public class EnemyAbacateController : MonoBehaviour
 
         // Inicializar a velocidade do inimigo
         currentSpeed = enemySpeed;
+
+        // Inicializar a vida do inimigo
+        currentHealth = maxHealth;
     }
 
     void Update()
