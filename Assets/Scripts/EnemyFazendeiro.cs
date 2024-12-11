@@ -25,6 +25,10 @@ public class EnemyFazendeiro : MonoBehaviour
 
     private float walktimer;
 
+    // Variaveis para mecanica de ataque
+    private float attackRate = 2f;
+    private float nextAttack;
+
     // Variaveis para mecanica de dano
     public int maxHealth;
     public int currentHealth;
@@ -94,6 +98,24 @@ public class EnemyFazendeiro : MonoBehaviour
 
         }
 
+        // Gerenciar o tempo de stagger
+        if (isTalkingDamage && !isDeath)
+        {
+            damageTime += Time.deltaTime;
+
+            ZeroSpeed();
+
+            if (damageTime >= staggerTime)
+            {
+                isTalkingDamage = false;
+                damageTime = 0;
+
+                ResetSpeed();
+
+            }
+
+        }
+
         // Atualiza o animator
         UpdateAnimator();
     }
@@ -103,15 +125,15 @@ public class EnemyFazendeiro : MonoBehaviour
         if (!isDeath)
         {
             
-        // MOVIMENTAÇÃO
+            // MOVIMENTAÇÃO
 
-        // Variavel para armazenar a distância entre o Inimigo e o Player
-        Vector3 targetDistance = target.position - this.transform.position;
+            // Variavel para armazenar a distância entre o Inimigo e o Player
+            Vector3 targetDistance = target.position - this.transform.position;
 
-        // Determina se a força horizontal deve ser negativa ou positiva
-        // 5 / 5 = 1
-        // -5 / 5 = -1
-        horizontalForce = targetDistance.x / Mathf.Abs(targetDistance.x);
+            // Determina se a força horizontal deve ser negativa ou positiva
+            // 5 / 5 = 1
+            // -5 / 5 = -1
+            horizontalForce = targetDistance.x / Mathf.Abs(targetDistance.x);
 
             // Entre 1 e 2 segundos, será feita uma definição de direção vertical
             if (walktimer >= Random.Range(1f, 2f))
@@ -124,14 +146,28 @@ public class EnemyFazendeiro : MonoBehaviour
             }
 
             // Caso estaeja perto do Player, parar  a movimentação
-            if (Mathf.Abs(targetDistance.x) < 0.2f)
-        {
-            horizontalForce = 0;
-        }
+            if (Mathf.Abs(targetDistance.x) < Random.Range(1.6f, 0.2f))
+            {
+                horizontalForce = 0;
+            }
 
-        // Aplica a velocidade no inimigo fazendo o movimentar
-        rb.linearVelocity = new Vector2(horizontalForce * currentSpeed, verticalForce * currentSpeed);
-        
+            // Aplica a velocidade no inimigo fazendo o movimentar
+            rb.linearVelocity = new Vector2(horizontalForce * currentSpeed, verticalForce * currentSpeed);
+
+            // ATAQUE
+            // Se estiver perto do Player e o timer do jogo for maior que o valor de nextAttack
+            if (Mathf.Abs(targetDistance.x) < Random.Range(1.6f, 0.2f) && Mathf.Abs(targetDistance.y) < 0.05f && Time.time > nextAttack)
+            {
+                // Executa animação de ataque
+                animator.SetTrigger("Attack");
+
+                ZeroSpeed();
+
+                // Pega o tempo atual e soma o attackRate, para definir a partir de quando o inimigo poderá atacar novamente
+                nextAttack = Time.time + attackRate;
+
+            }
+
         }
     }
 
@@ -139,20 +175,6 @@ public class EnemyFazendeiro : MonoBehaviour
     {
         animator.SetBool("isWalking", isWalking);
     }
-
-    void ZeroSpeed()
-    {
-        currentSpeed = 0;
-
-    }
-
-
-    void ResetSpeed()
-    {
-        currentSpeed = enemySpeed;
-
-    }
-
     public void TakeDamage(int damage)
     {
         if (!isDeath)
@@ -171,4 +193,17 @@ public class EnemyFazendeiro : MonoBehaviour
             }
         }
     }
+
+    void ZeroSpeed()
+    {
+        currentSpeed = 0;
+
+    }
+
+    void ResetSpeed()
+    {
+        currentSpeed = enemySpeed;
+
+    }
+
 }

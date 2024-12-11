@@ -124,7 +124,7 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: "duas po\xE7\xF5es sprite"
     originalName: 
-    pivot: {x: 0.4505191, y: 0.08951051}
+    pivot: {x: 0.48575184, y: 0.0029291152}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 

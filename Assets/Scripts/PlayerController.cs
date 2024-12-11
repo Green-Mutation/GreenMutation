@@ -1,8 +1,14 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class PlayerController : MonoBehaviour
 {
+    //Variaveis da poï¿½ï¿½o 
+    public Text pocaoTxt;
+    private int pocao;
+
     //iniciando rigidbody e animator
     private Rigidbody2D playerRigidBody;
     private Animator animator;
@@ -31,6 +37,9 @@ public class PlayerController : MonoBehaviour
         playerAnimator = GetComponent<Animator>();
 
         currentHealth = maxHealth;
+
+        //recebe o 0 no inicio
+        pocao = 0;
     }
 
     
@@ -62,7 +71,13 @@ public class PlayerController : MonoBehaviour
                 }
             }
         }
+
+        //transforma pocao em texto no UI
+        //pocaoTxt.text = pocao.ToString();
+
     }
+
+    
 
 
     private void FixedUpdate()
@@ -121,7 +136,7 @@ public class PlayerController : MonoBehaviour
 
     void PlayerCross()
     {
-        // Acessa a animação do Cross
+        // Acessa a animaï¿½ï¿½o do Cross
         // Ativa o gatilho de ataque Cross
         playerAnimator.SetTrigger("isCross");
     }
@@ -166,5 +181,18 @@ public class PlayerController : MonoBehaviour
     public void DisablePlayer()
     {
         this.gameObject.SetActive(false);
+    }
+
+    //colisao da poï¿½ï¿½o
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        // usa a tag da unity
+        if (collision.gameObject.CompareTag("Pocao"))
+        {
+            //recebe ela mesma
+            pocao = pocao + 1;
+            //destroi objeto
+            Destroy(collision.gameObject);
+        }
     }
 }
