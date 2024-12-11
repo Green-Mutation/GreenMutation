@@ -5,6 +5,7 @@ public class PlayerController : MonoBehaviour
 {
     //iniciando rigidbody e animator
     private Rigidbody2D playerRigidBody;
+    private Animator animator;
     public float playerSpeed = 1f;
     public float currentSpeed;
 
@@ -133,6 +134,25 @@ public class PlayerController : MonoBehaviour
         comboControl = false;
     }
 
+    public void TakeDamage(int damage)
+    {
+        if (!isDead)
+        {
+            currentHealth -= damage;
+            playerAnimator.SetTrigger("HitDamage");
+            FindAnyObjectByType<UIManager>().UpdatePlayerHealth(currentHealth);
+
+            if (currentHealth <= 0)
+            {
+                isDead = true;
+
+                ZeroSpeed();
+
+                animator.SetTrigger("isDead");
+            }
+        }
+    }
+
     void ZeroSpeed()
     {
         currentSpeed = 0;
@@ -143,13 +163,8 @@ public class PlayerController : MonoBehaviour
         currentSpeed = playerSpeed;
     }
 
-    public void TakeDamage(int damage)
+    public void DisablePlayer()
     {
-        if (!isDead)
-        {
-            currentHealth -= damage;
-            playerAnimator.SetTrigger("HitDamage");
-            FindAnyObjectByType<UIManager>().UpdatePlayerHealth(currentHealth);
-        }
+        this.gameObject.SetActive(false);
     }
 }
