@@ -155,7 +155,7 @@ public class EnemyMeleeController : MonoBehaviour
         // Se estiver perto do Player e o timer do jogo for maior que o valor de nextAttack 
         if (Mathf.Abs(targetDistance.x) < 0.2f && Mathf.Abs(targetDistance.y) < 0.05f && Time.time > nextAttack)
         {
-            // Esse comando executa a naimação de ataque do inimigo
+            // Esse comando executa a aniimação de ataque do inimigo
             animator.SetTrigger("Attack");
 
             // Após executar a ação, zera a velocidade do inimigo, portanto, zeroSpeed
