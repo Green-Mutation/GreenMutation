@@ -1090,6 +1090,11 @@ RectTransform:
   m_AnchoredPosition: {x: -5, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!4 &670974370 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4442221763935927720, guid: 4c061ddef0838ff469493417601085cf, type: 3}
+  m_PrefabInstance: {fileID: 1607268977}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &708327117
 GameObject:
   m_ObjectHideFlags: 0
@@ -2575,11 +2580,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 964328059230895737, guid: 0c511fec31c67034386e27f9d16df1ce, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -18.707
+      value: -19.124
       objectReference: {fileID: 0}
     - target: {fileID: 964328059230895737, guid: 0c511fec31c67034386e27f9d16df1ce, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.994
+      value: -1.155
       objectReference: {fileID: 0}
     - target: {fileID: 964328059230895737, guid: 0c511fec31c67034386e27f9d16df1ce, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2628,7 +2633,7 @@ PrefabInstance:
     - target: {fileID: 8977338278014503481, guid: 0c511fec31c67034386e27f9d16df1ce, type: 3}
       propertyPath: Target.TrackingTarget
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 670974370}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
