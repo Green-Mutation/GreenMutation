@@ -19,6 +19,8 @@ public class Attack : MonoBehaviour
         // Ao colidir, salva na variavel enemy, o inimigo que foi colidido
         EnemyAbacateController enemy = collision.GetComponent<EnemyAbacateController>();
 
+        EnemyMeleeController enemyRosa = collision.GetComponent<EnemyMeleeController>();
+
         //ao colidir, salva na variavel player, o player que foi atingido
         PlayerController player = collision.GetComponent<PlayerController>();
 
@@ -36,11 +38,10 @@ public class Attack : MonoBehaviour
             //O player recebe dano
             player.TakeDamage(damage);
         }
-        // Se a colisão foi com o player
-        //if (player != null)
-        //{
-        //    // Player recebe dano
-        //    player.TakeDamage(damage);
-        //}
+        
+        if (enemyRosa != null)
+        {
+            enemyRosa.TakeDamage(damage);
+        }
     }
 }
