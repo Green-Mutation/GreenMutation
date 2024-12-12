@@ -800,11 +800,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 964328059230895737, guid: 0c511fec31c67034386e27f9d16df1ce, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.3
+      value: -2.406
       objectReference: {fileID: 0}
     - target: {fileID: 964328059230895737, guid: 0c511fec31c67034386e27f9d16df1ce, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.64
+      value: -0.583
       objectReference: {fileID: 0}
     - target: {fileID: 964328059230895737, guid: 0c511fec31c67034386e27f9d16df1ce, type: 3}
       propertyPath: m_LocalPosition.z
@@ -853,7 +853,7 @@ PrefabInstance:
     - target: {fileID: 8977338278014503481, guid: 0c511fec31c67034386e27f9d16df1ce, type: 3}
       propertyPath: Target.TrackingTarget
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1862373967}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2326,6 +2326,11 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!4 &1862373967 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4442221763935927720, guid: 4c061ddef0838ff469493417601085cf, type: 3}
+  m_PrefabInstance: {fileID: 1474680249}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1898357354
 GameObject:
   m_ObjectHideFlags: 0
