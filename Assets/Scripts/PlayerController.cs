@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 
@@ -74,8 +75,15 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        //transforma pocao em texto no UI
-        pocaoTxt.text = pocao.ToString();
+
+
+        if (SceneManager.GetActiveScene().name == "FaseBonusBunker")
+        {
+            //transforma pocao em texto no UI
+            pocaoTxt.text = pocao.ToString();
+        }        
+            
+
 
     }
 
