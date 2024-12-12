@@ -73,7 +73,7 @@ public class PlayerController : MonoBehaviour
         }
 
         //transforma pocao em texto no UI
-        pocaoTxt.text = pocao.ToString();
+        //pocaoTxt.text = pocao.ToString();
 
     }
 
