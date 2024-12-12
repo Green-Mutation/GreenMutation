@@ -300,7 +300,7 @@ PrefabInstance:
     - target: {fileID: 1033724427517799861, guid: 4c061ddef0838ff469493417601085cf, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 8461304693969360937, guid: d8769835403be8b419b9a07793384e06, type: 3}
+      objectReference: {fileID: -6064145546684116437, guid: d8769835403be8b419b9a07793384e06, type: 3}
     - target: {fileID: 1033724427517799861, guid: 4c061ddef0838ff469493417601085cf, type: 3}
       propertyPath: m_WasSpriteAssigned
       value: 1
@@ -308,10 +308,6 @@ PrefabInstance:
     - target: {fileID: 3708195937383301863, guid: 4c061ddef0838ff469493417601085cf, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 3814142795735489689, guid: 4c061ddef0838ff469493417601085cf, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4442221763935927720, guid: 4c061ddef0838ff469493417601085cf, type: 3}
       propertyPath: m_LocalPosition.x
