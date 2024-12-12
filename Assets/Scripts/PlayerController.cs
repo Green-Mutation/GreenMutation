@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 
@@ -38,7 +39,7 @@ public class PlayerController : MonoBehaviour
 
         currentHealth = maxHealth;
 
-        //recebe o 0 no inicio
+        ////recebe o 0 no inicio
         pocao = 0;
     }
 
@@ -72,12 +73,17 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        //transforma pocao em texto no UI
-        //pocaoTxt.text = pocao.ToString();
+
+        if (SceneManager.GetActiveScene().name == "FaseBonusBunker")
+        {
+            //transforma pocao em texto no UI
+            pocaoTxt.text = pocao.ToString();
+        }        
+            
 
     }
 
-    
+
 
 
     private void FixedUpdate()
@@ -193,6 +199,8 @@ public class PlayerController : MonoBehaviour
             pocao = pocao + 1;
             //destroi objeto
             Destroy(collision.gameObject);
+
+
         }
     }
 }
