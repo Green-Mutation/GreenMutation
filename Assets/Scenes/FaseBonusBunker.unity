@@ -184,6 +184,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4792527126883786215, guid: 4c061ddef0838ff469493417601085cf, type: 3}
+      propertyPath: pocaoUI
+      value: 
+      objectReference: {fileID: 1288272569}
+    - target: {fileID: 4792527126883786215, guid: 4c061ddef0838ff469493417601085cf, type: 3}
       propertyPath: pocaoTxt
       value: 
       objectReference: {fileID: 1058039213}
@@ -2358,12 +2362,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1288272570}
   m_Layer: 5
-  m_Name: PocaoUi
-  m_TagString: Untagged
+  m_Name: PocaoUI
+  m_TagString: PocaoUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1288272570
 RectTransform:
   m_ObjectHideFlags: 0

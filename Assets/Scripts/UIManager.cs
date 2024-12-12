@@ -58,6 +58,7 @@ public class UIManager : MonoBehaviour
         enemyHealthBar.maxValue = maxHealth;
         enemyHealthBar.value = currentHealth;
         enemyImage.sprite = image;
+        
 
         // Zera o timer para começar a contar 4 segundos
         enemyTimer = 0;
@@ -65,6 +66,5 @@ public class UIManager : MonoBehaviour
         // Habilita a enemyUI, deixando-a visível
         enemyUI.SetActive(true);
 
-     
     }
 }

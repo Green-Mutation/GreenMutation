@@ -29,6 +29,8 @@ public class PlayerController : MonoBehaviour
     public int currentHealth;
     public Sprite playerImage;
 
+    public GameObject pocaoUI;
+
     void Start()
     {
         //inicializa as propriedades do Rigidbody2D e Animator
@@ -194,7 +196,7 @@ public class PlayerController : MonoBehaviour
             //destroi objeto
             Destroy(collision.gameObject);
 
-
+            pocaoUI.SetActive(true);
         }
     }
 }
