@@ -308,7 +308,7 @@ PrefabInstance:
     - target: {fileID: 1033724427517799861, guid: 4c061ddef0838ff469493417601085cf, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -212390785395306138, guid: d8769835403be8b419b9a07793384e06, type: 3}
+      objectReference: {fileID: 8461304693969360937, guid: d8769835403be8b419b9a07793384e06, type: 3}
     - target: {fileID: 1033724427517799861, guid: 4c061ddef0838ff469493417601085cf, type: 3}
       propertyPath: m_SpriteSortPoint
       value: 1
@@ -964,7 +964,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1647,7 +1647,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

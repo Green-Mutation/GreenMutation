@@ -74,12 +74,14 @@ public class PlayerController : MonoBehaviour
         }
 
 
+
         if (SceneManager.GetActiveScene().name == "FaseBonusBunker")
         {
             //transforma pocao em texto no UI
             pocaoTxt.text = pocao.ToString();
         }        
             
+
 
     }
 
